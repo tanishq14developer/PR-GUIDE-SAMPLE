@@ -1,0 +1,71 @@
+Changes- 
+- Migrated all the registration-related APIs to Spring boot.
+- Integrated PostgreSQL, Redis & AWS SES.
+- Deployment setup using Docker & EC2.
+- Added log back for formatted logging.
+
+
+Modules Impacted:
+- [x] Registration
+- [x] Core
+
+
+## Type of change 
+Check all that apply
+
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [x] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Experimental change
+- [ ] Scaling policy
+- [ ] Observability - Metrics/Alerts
+
+## Pipeline Impacted
+
+- [ ] API (Panel)
+- [ ] Analytics (Raven)
+
+## External Modules Interacted/Impacted
+
+- [x] PG Writer
+- [x] PG Reader
+- [x] SMS Channel
+
+## How Has This Been Tested?
+
+Please describe the tests that you ran to verify your changes. 
+
+- [ ] Are integration tests added in all modules for your feature?
+- [x] Dev tests done?
+- [ ] Load tests done? Pls share results
+
+## Observability - Logs/Metrics/Alerts
+
+Please describe the observability changes.
+
+- [ ] Counter metrics added
+- [ ] Latency metrics added
+- [ ] Grafana enabled and dashboards created
+- [ ] New Relic enabled
+- [x] Debug logs added
+
+## Self Checklist:
+
+- [ ] Followed all guidelines for the project
+- [ ] Did self review of PR
+- [ ] Added comments for difficult/abstruse logic 
+- [ ] Added documentation
+- [x] No new warnings (lint)
+- [ ] No existing tests were broken
+- [ ] Downstream/upstream/dependent changes are PR READY
+
+## Modules being Deployed
+
+- [x] Registration.
+- [ ] User
+- [ ] API
+
+
+## Post Merge Checklist:
+
+- [ ] Pod logs verification
